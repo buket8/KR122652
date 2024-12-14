@@ -1,0 +1,339 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fb;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    background-color: #87CEFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links .button {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-left: 15px;
+    background-color: #87CEFA;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-links .button:hover {
+    background-color: #007bb5;
+}
+
+.nav-links .button:active {
+    transform: scale(1.05);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.search input {
+    padding: 12px 40px 12px 12px;
+    width: 500px !important;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    position: relative;
+}
+
+.search input:focus {
+    border-color: #87CEFA;
+    outline: none;
+}
+
+.search .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #888;
+    pointer-events: none;
+}
+
+.search .button {
+    padding: 12px 20px;
+    background-color: #87CEFA;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 10px;
+}
+
+.search .button:hover {
+    background-color: #007bb5;
+}
+
+.search .button:active {
+    transform: scale(1.05);
+}
+
+.job-details {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.job-details h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.job-info {
+    margin-top: 20px;
+}
+
+.job-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.job-info p strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.job-info p:not(:last-child) {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+}
+
+.job-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.job-list {
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 20px 10px 20px 30px; 
+}
+
+.register-form, .login-form, .post-job-form {
+    width: 100%;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.register-form .form-group {
+    text-align: left !important;
+}
+
+.register-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #87CEFA;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #87CEFA;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #007bb5;
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+.category-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.category-box {
+    padding: 15px 35px;
+    background-color: #87CEFA;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100px;
+}
+
+.category-box:hover {
+    background-color: #007bb5;
+    transform: scale(1.05);
+}
+
+.category-box:active {
+    transform: scale(1);
+}
+
+.job {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.job:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.job a.view-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #87CEFA;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.job a.view-more:hover {
+    background-color: #007bb5;
+}
+
+.button, .apply-button {
+    background-color: #87CEFA;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    max-width: 200px;
+    width: auto;
+    text-align: center;
+}
+
+.apply-button {
+    padding: 12px 20px;
+}
+
+.button:hover, .apply-button:hover {
+    background-color: #007bb5;
+}
+
+.button:active, .apply-button:active {
+    transform: scale(1.05);
+}
+
+.profile {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.profile h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profile form input,
+.profile form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile form button {
+    background-color: #87CEFA;
+    color: white;
+    cursor: pointer;
+}
+
+.profile form button:hover {
+    background-color: #007bb5;
+}
